@@ -41,7 +41,7 @@ To get started with this portfolio project, follow these steps:
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/Tsrgtm/tsrgtm.git
+    git clone https://github.com/Tsrgtm/portfolio.git
     cd portfolio
     ```
 
