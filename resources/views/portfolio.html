@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tusar Gautam - Web Developer Portfolio</title>
+        <meta
+            name="description"
+            content="Explore the portfolio of Tusar Gautam, a web developer specializing in Laravel, WordPress, and more. Discover projects, skills, and contact information."
+        />
+        <meta
+            name="keywords"
+            content="Tusar Gautam, web developer, Laravel, WordPress, portfolio, projects, contact"
+        />
+        <meta name="author" content="Tusar Gautam" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script
+            src="https://kit.fontawesome.com/24f74c1771.js"
+            crossorigin="anonymous"
+        ></script>
+        <style>
+            body {
+                background-color: #0a0a0a;
+                color: #f1f1f1;
+                font-family: "Inter", sans-serif;
+            }
+
+            .gradient-bg {
+                background: linear-gradient(135deg, #1e1e1e 0%, #0f0f0f 100%);
+            }
+
+            .glow-text {
+                text-shadow: 0 0 8px rgba(100, 255, 218, 0.3);
+            }
+
+            .badge {
+                transition: all 0.3s ease;
+            }
+
+            .badge:hover {
+                transform: translateY(-3px);
+            }
+
+            .project-card {
+                transition: all 0.3s ease;
+            }
+
+            .project-card:hover {
+                transform: translateY(-5px);
+            }
+
+            .contact-input {
+                background-color: rgba(255, 255, 255, 0.05);
+                border: 1px solid #333;
+                transition: all 0.3s ease;
+            }
+
+            .contact-input:focus {
+                border-color: #64ffda;
+                background-color: rgba(100, 255, 218, 0.05);
+            }
+
+            .tab-content {
+                display: none;
+                opacity: 0;
+                transform: translateY(10px);
+                transition: all 0.5s ease;
+            }
+
+            .tab-content.active {
+                display: block;
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .tab-button {
+                transition: all 0.3s ease;
+            }
+
+            .tab-button.active {
+                color: #64ffda;
+                border-bottom: 2px solid #64ffda;
+            }
+
+            .floating {
+                animation: floating 3s ease-in-out infinite;
+            }
+
+            @keyframes floating {
+                0% {
+                    transform: translateY(0px);
+                }
+                50% {
+                    transform: translateY(-10px);
+                }
+                100% {
+                    transform: translateY(0px);
+                }
+            }
+
+            .section-divider {
+                width: 100%;
+                height: 1px;
+                background: linear-gradient(
+                    to right,
+                    transparent,
+                    rgba(100, 255, 218, 0.3),
+                    transparent
+                );
+                margin: 40px 0;
+            }
+
+            .contact-card {
+                background: rgba(30, 30, 30, 0.7);
+                backdrop-filter: blur(10px);
+            }
+
+            .contact-icon {
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                background: rgba(100, 255, 218, 0.1);
+            }
+        </style>
+    </head>
+    <body class="min-h-screen">
+        <div class="mx-auto max-w-2xl px-6 py-12">
+            <!-- Hero Section -->
+            <section class="mb-20">
+                <div
+                    class="gradient-bg rounded-2xl p-8 mb-10 relative overflow-hidden border border-gray-800"
+                >
+                    <div class="flex items-center space-x-6 mb-8">
+                        <div
+                            class="w-24 h-24 rounded-full bg-gradient-to-br from-gray-700 to-gray-900 shadow-lg flex items-center justify-center text-4xl font-bold text-white floating"
+                        >
+                            TG
+                        </div>
+                        <div>
+                            <h1 class="text-3xl font-bold">Tusar Gautam</h1>
+                            <p class="text-gray-400 mb-1">Web Developer</p>
+                            <p class="text-gray-500 text-sm">
+                                <i class="fas fa-map-marker-alt mr-2"></i>
+                                Kathmandu, Nepal
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="mb-8 text-gray-300 leading-relaxed">
+                        Hey there! I'm a self-taught web developer specializing
+                        in creating web applications. My primary tools are
+                        Laravel (PHP) and WordPress, but I also frequently use
+                        Python, Node.js, and Express.js.
+                    </p>
+
+                    <div class="flex flex-wrap gap-4 mb-8">
+                        <a
+                            href="#"
+                            class="px-6 py-2 bg-gray-800 rounded-full text-white font-medium transition-all hover:bg-gray-700 hover:shadow-lg"
+                        >
+                            Download CV
+                        </a>
+                        <a
+                            href="#contact"
+                            class="px-6 py-2 border-2 border-gray-700 text-gray-300 rounded-full font-medium transition-all hover:border-gray-600 hover:text-gray-200 hover:shadow-lg"
+                        >
+                            Contact Me
+                        </a>
+                    </div>
+
+                    <div class="flex space-x-6 text-xl">
+                        <a
+                            href="https://github.com/Tsrgtm"
+                            target="_blank"
+                            class="text-gray-500 hover:text-gray-300 transition-colors"
+                            ><i class="fab fa-github"></i
+                        ></a>
+                        <a
+                            href="https://www.linkedin.com/in/tusar-gautam-452b12293/"
+                            target="_blank"
+                            class="text-gray-500 hover:text-gray-300 transition-colors"
+                            ><i class="fab fa-linkedin"></i
+                        ></a>
+                        <a
+                            href="https://x.com/tusargtm"
+                            target="_blank"
+                            class="text-gray-500 hover:text-gray-300 transition-colors"
+                            ><i class="fa-brands fa-x-twitter"></i
+                        ></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="mb-20">
+                <h2 class="text-2xl font-bold mb-8">Skills & Technologies</h2>
+                <div
+                    class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4"
+                >
+                    <div
+                        class="badge bg-gray-800 p-3 rounded-lg flex items-center space-x-2"
+                    >
+                        <img
+                            height="18"
+                            width="18"
+                            src="https://cdn.simpleicons.org/javascript/fff"
+                        />
+                        <span class="text-gray-300">JavaScript</span>
+                    </div>
+
+                    <div
+                        class="badge bg-gray-800 p-3 rounded-lg flex items-center space-x-2"
+                    >
+                        <img
+                            height="18"
+                            width="18"
+                            src="https://cdn.simpleicons.org/python/fff"
+                        />
+                        <span class="text-gray-300">Python</span>
+                    </div>
+
+                    <div
+                        class="badge bg-gray-800 p-3 rounded-lg flex items-center space-x-2"
+                    >
+                        <img
+                            height="18"
+                            width="18"
+                            src="https://cdn.simpleicons.org/mysql/fff"
+                        />
+                        <span class="text-gray-300">MySQL</span>
+                    </div>
+
+                    <div
+                        class="badge bg-gray-800 p-3 rounded-lg flex items-center space-x-2"
+                    >
+                        <img
+                            height="18"
+                            width="18"
+                            src="https://cdn.simpleicons.org/laravel/fff"
+                        />
+                        <span class="text-gray-300">Laravel</span>
+                    </div>
+
+                    <div
+                        class="badge bg-gray-800 p-3 rounded-lg flex items-center space-x-2"
+                    >
+                        <img
+                            height="18"
+                            width="18"
+                            src="https://cdn.simpleicons.org/nodedotjs/fff"
+                        />
+                        <span class="text-gray-300">Node.js</span>
+                    </div>
+
+                    <div
+                        class="badge bg-gray-800 p-3 rounded-lg flex items-center space-x-2"
+                    >
+                        <img
+                            height="18"
+                            width="18"
+                            src="https://cdn.simpleicons.org/wordpress/fff"
+                        />
+                        <span class="text-gray-300">WordPress</span>
+                    </div>
+
+                    <div
+                        class="badge bg-gray-800 p-3 rounded-lg flex items-center space-x-2"
+                    >
+                        <img
+                            height="18"
+                            width="18"
+                            src="https://cdn.simpleicons.org/amazonwebservices/fff"
+                        />
+                        <span class="text-gray-300">AWS</span>
+                    </div>
+
+                    <div
+                        class="badge bg-gray-800 p-3 rounded-lg flex items-center space-x-2"
+                    >
+                        <img
+                            height="18"
+                            width="18"
+                            src="https://cdn.simpleicons.org/git/fff"
+                        />
+                        <span class="text-gray-300">Git</span>
+                    </div>
+
+                    <div
+                        class="badge bg-gray-800 p-3 rounded-lg flex items-center space-x-2"
+                    >
+                        <img
+                            height="18"
+                            width="18"
+                            src="https://cdn.simpleicons.org/github/fff"
+                        />
+                        <span class="text-gray-300">Github</span>
+                    </div>
+
+                    <div
+                        class="badge bg-gray-800 p-3 rounded-lg flex items-center space-x-2"
+                    >
+                        <img
+                            height="18"
+                            width="18"
+                            src="https://cdn.simpleicons.org/html5/fff"
+                        />
+                        <span class="text-gray-300">HTML5</span>
+                    </div>
+
+                    <div
+                        class="badge bg-gray-800 p-3 rounded-lg flex items-center space-x-2"
+                    >
+                        <img
+                            height="18"
+                            width="18"
+                            src="https://cdn.simpleicons.org/css3/fff"
+                        />
+                        <span class="text-gray-300">CSS3</span>
+                    </div>
+
+                    <div
+                        class="badge bg-gray-800 p-3 rounded-lg flex items-center space-x-2"
+                    >
+                        <img
+                            height="18"
+                            width="18"
+                            src="https://cdn.simpleicons.org/autodeskmaya/fff"
+                        />
+                        <span class="text-gray-300">Maya</span>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider"></div>
+
+            <!-- About Section with Tabs -->
+            <section class="mb-20">
+                <h2 class="text-2xl font-bold mb-8">About Me</h2>
+
+                <div class="flex space-x-4 mb-6 border-b border-gray-800">
+                    <button
+                        class="tab-button px-4 py-2 font-medium active"
+                        data-tab="experience"
+                    >
+                        Experience
+                    </button>
+                    <button
+                        class="tab-button px-4 py-2 font-medium"
+                        data-tab="education"
+                    >
+                        Education
+                    </button>
+                </div>
+
+                <div id="experience" class="tab-content active">
+                    <div class="space-y-6">
+                        <div class="border-l-2 border-gray-600 pl-4 py-2">
+                            <h3 class="text-xl font-medium">
+                                Freelance Laravel Developer
+                            </h3>
+                            <p class="text-gray-400 text-sm">
+                                Freelancer • 2024 - Present
+                            </p>
+                            <p class="text-gray-300 mt-2 leading-relaxed">
+                                Worked on 5+ Laravel projects for various
+                                clients, including blogs. Developed APIs,
+                                optimized database performance. Built websites
+                                for business blogs and other purposes.
+                            </p>
+                        </div>
+
+                        <div class="border-l-2 border-gray-600 pl-4 py-2">
+                            <h3 class="text-xl font-medium">
+                                Wordpress Developer
+                            </h3>
+                            <p class="text-gray-400 text-sm">
+                                Digipal Solutions • 2023 - 2025
+                            </p>
+                            <p class="text-gray-300 mt-2 leading-relaxed">
+                                Managed multiple WordPress websites for business
+                                clients, including domain and hosting setup.
+                                Implemented custom themes, plugins, and SEO
+                                optimization. Configured email services and
+                                ensured reliable site performance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="education" class="tab-content">
+                    <div class="space-y-6">
+                        <div class="border-l-2 border-gray-600 pl-4 py-2">
+                            <h3 class="text-xl font-medium">
+                                BSc(Hons) in Multimedia Technologies
+                            </h3>
+                            <p class="text-gray-400 text-sm">
+                                Islington College, Nepal • 2018 - Present
+                            </p>
+                            <p class="text-gray-300 mt-2 leading-relaxed">
+                                Currently pursuing my undergraduate degree in
+                                Multimedia Technologies, focusing on web
+                                development and digital media. Coursework
+                                includes web programming, multimedia design, and
+                                human computer interaction.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider"></div>
+
+            <!-- Projects Section -->
+            <section class="mb-20">
+                <h2 class="text-2xl font-bold mb-8">Featured Projects</h2>
+
+                <div class="grid gap-6">
+                    <div
+                        class="project-card bg-gray-900 rounded-xl p-6 border border-gray-800"
+                    >
+                        <div class="flex items-start justify-between mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold">
+                                    Digipal Solutions
+                                </h3>
+                            </div>
+                            <div class="flex space-x-3">
+                                <a
+                                    href="https://github.com/Tsrgtm/Digipal-Solutions"
+                                    target="_blank"
+                                    class="text-gray-500 hover:text-gray-300"
+                                    ><i class="fab fa-github"></i
+                                ></a>
+                                <a
+                                    href="https://digipalsolutions.com.np"
+                                    target="_blank"
+                                    class="text-gray-500 hover:text-gray-300"
+                                    ><i class="fas fa-external-link-alt"></i
+                                ></a>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            Business website for DigiPal Solutions, a digital
+                            marketing company based in Nepal. Made with Laravel
+                            and Livewire.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="px-3 py-1 bg-gray-800 rounded-full text-xs text-gray-300"
+                                >Laravel</span
+                            >
+                            <span
+                                class="px-3 py-1 bg-gray-800 rounded-full text-xs text-gray-300"
+                                >Livewire</span
+                            >
+                        </div>
+                    </div>
+
+                    <div
+                        class="project-card bg-gray-900 rounded-xl p-6 border border-gray-800"
+                    >
+                        <div class="flex items-start justify-between mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold">
+                                    Naesthetic Skin Care
+                                </h3>
+                            </div>
+                            <div class="flex space-x-3">
+                                <a
+                                    href="https://naestheticskincare.com"
+                                    target="_blank"
+                                    class="text-gray-500 hover:text-gray-300"
+                                    ><i class="fas fa-external-link-alt"></i
+                                ></a>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            A product showcase website for Naesthetic Skin Care,
+                            built with WordPress and Elementor. Features a
+                            custom theme, product catalog, and contact form.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="px-3 py-1 bg-gray-800 rounded-full text-xs text-gray-300"
+                                >WordPress</span
+                            >
+                            <span
+                                class="px-3 py-1 bg-gray-800 rounded-full text-xs text-gray-300"
+                                >Elementor</span
+                            >
+                        </div>
+                    </div>
+
+                    <div
+                        class="project-card bg-gray-900 rounded-xl p-6 border border-gray-800"
+                    >
+                        <div class="flex items-start justify-between mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold">MoMo Durbar</h3>
+                            </div>
+                            <div class="flex space-x-3">
+                                <a
+                                    href="https://momodurbar.com"
+                                    target="_blank"
+                                    class="text-gray-500 hover:text-gray-300"
+                                    ><i class="fas fa-external-link-alt"></i
+                                ></a>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            A simple one-page website for MoMo Durbar, featuring
+                            a dashboard to add menu items and read contact form
+                            messages.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="px-3 py-1 bg-gray-800 rounded-full text-xs text-gray-300"
+                                >Laravel</span
+                            >
+                            <span
+                                class="px-3 py-1 bg-gray-800 rounded-full text-xs text-gray-300"
+                                >Filament</span
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="mt-8 text-center">
+          <a
+            href="#"
+            class="px-6 py-2 border-2 border-gray-800 text-gray-300 rounded-full font-medium transition-all hover:border-gray-700 hover:text-gray-200 hover:shadow-lg"
+          >
+            View All Projects
+          </a>
+        </div> -->
+            </section>
+
+            <div class="section-divider"></div>
+
+
+            <section id="contact" class="mb-20">
+                <h2 class="text-2xl font-bold mb-8">Get In Touch</h2>
+
+                <div
+                    class="contact-card rounded-2xl p-8 border border-gray-800"
+                >
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-xl font-medium mb-6">
+                                Send me a message
+                            </h3>
+                            <form
+                                action="https://api.web3forms.com/submit"
+                                method="POST"
+                                class="space-y-6"
+                            >
+                                <input
+                                    type="hidden"
+                                    name="access_key"
+                                    value="f328a1cb-48aa-42f3-b261-5ef235eb3a6a"
+                                />
+                                <div>
+                                    <label
+                                        class="block text-gray-300 mb-2 text-sm"
+                                        >Name</label
+                                    >
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        id="name"
+                                        class="contact-input w-full p-3 bg-transparent outline-none rounded-lg"
+                                        placeholder="Your name"
+                                        required
+                                    />
+                                </div>
+
+                                <div>
+                                    <label
+                                        class="block text-gray-300 mb-2 text-sm"
+                                        >Email</label
+                                    >
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        class="contact-input w-full p-3 bg-transparent outline-none rounded-lg"
+                                        placeholder="your@email.com"
+                                        required
+                                    />
+                                </div>
+
+                                <div>
+                                    <label
+                                        class="block text-gray-300 mb-2 text-sm"
+                                        >Message</label
+                                    >
+                                    <textarea
+                                        id="message"
+                                        name="message"
+                                        class="contact-input w-full p-3 bg-transparent outline-none rounded-lg min-h-32"
+                                        placeholder="Your message"
+                                        required
+                                    ></textarea>
+                                </div>
+
+                                <button
+                                    type="submit"
+                                    class="w-full py-3 bg-gray-800 rounded-lg text-white font-medium transition-all hover:bg-gray-700 hover:shadow-lg"
+                                >
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-medium mb-6">
+                                Contact Information
+                            </h3>
+                            <div class="space-y-6">
+                                <div class="flex items-center space-x-4">
+                                    <div class="contact-icon">
+                                        <i
+                                            class="fas fa-envelope text-gray-300 text-xl"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-gray-400 text-sm">
+                                            Email
+                                        </p>
+                                        <p class="text-gray-200">
+                                            gautamtusar2@gmail.com
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center space-x-4">
+                                    <div class="contact-icon">
+                                        <i
+                                            class="fas fa-phone-alt text-gray-300 text-xl"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-gray-400 text-sm">
+                                            Phone
+                                        </p>
+                                        <p class="text-gray-200">
+                                            +977 9749778728
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center space-x-4">
+                                    <div class="contact-icon">
+                                        <i
+                                            class="fas fa-map-marker-alt text-gray-300 text-xl"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-gray-400 text-sm">
+                                            Location
+                                        </p>
+                                        <p class="text-gray-200">
+                                            Kathmandu, Nepal
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-8 pt-6 border-t border-gray-800">
+                                <h4 class="text-gray-300 mb-4">
+                                    Connect with me
+                                </h4>
+                                <div class="flex space-x-4">
+                                    <a
+                                        href="https://github.com/Tsrgtm"
+                                        target="_blank"
+                                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-300 hover:bg-gray-700 transition-colors"
+                                    >
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a
+                                        href="https://www.linkedin.com/in/tusar-gautam-452b12293/"
+                                        target="_blank"
+                                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-300 hover:bg-gray-700 transition-colors"
+                                    >
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a
+                                        href="https://x.com/tusargtm"
+                                        target="_blank"
+                                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-300 hover:bg-gray-700 transition-colors"
+                                    >
+                                        <i class="fa-brands fa-x-twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="text-center text-gray-500 text-sm">
+                <p>
+                    &copy; <span id="current-year"></span> Tusar Gautam. All
+                    rights reserved.
+                </p>
+            </footer>
+        </div>
+
+        <script>
+            // Tab functionality
+            document.addEventListener("DOMContentLoaded", function () {
+                const tabButtons = document.querySelectorAll(".tab-button");
+
+                tabButtons.forEach((button) => {
+                    button.addEventListener("click", function () {
+                        // Remove active class from all buttons and content
+                        document
+                            .querySelectorAll(".tab-button")
+                            .forEach((btn) => {
+                                btn.classList.remove("active");
+                            });
+
+                        document
+                            .querySelectorAll(".tab-content")
+                            .forEach((content) => {
+                                content.classList.remove("active");
+                            });
+
+                        // Add active class to clicked button
+                        this.classList.add("active");
+
+                        // Show corresponding content
+                        const tabId = this.getAttribute("data-tab");
+                        document.getElementById(tabId).classList.add("active");
+                    });
+                });
+
+                // Smooth scroll for contact link
+                document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+                    anchor.addEventListener("click", function (e) {
+                        e.preventDefault();
+
+                        const targetId = this.getAttribute("href");
+                        if (targetId === "#") return;
+
+                        const targetElement = document.querySelector(targetId);
+                        if (targetElement) {
+                            targetElement.scrollIntoView({
+                                behavior: "smooth",
+                            });
+                        }
+                    });
+                });
+            });
+
+            const currentYearSpan = document.getElementById("current-year");
+            currentYearSpan.innerText = new Date().getFullYear().toString();
+        </script>
+    </body>
+</html>
