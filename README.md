@@ -9,7 +9,7 @@
 
 Modern personal portfolio showcasing projects, skills, and professional journey. Built with Laravel 12 and Livewire 3.
 
-➡️ **Live Demo:** [portfolio.tusargautam.com](https://tusargautam.com.np)
+➡️ **Live Demo:** [tusargautam.com.np](https://tusargautam.com.np)
 
 ## Features
 
