@@ -33,6 +33,8 @@ class ContactForm extends Component
         $this->reset();
     }
 
+    
+
     public function render()
     {
         return view('livewire.contact-form');

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head class="scroll-smooth">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Tusar Gautam - Web Developer Portfolio')</title>
@@ -14,8 +14,10 @@
 </head>
 
 <body>
-
-    @yield('content')
+    <div class="relative mx-auto max-w-2xl px-4 sm:px-6 lg:px-8 py-12">
+        @include('layouts.partials.header')
+        @yield('content')
+    </div>
 
     @livewireScripts
 </body>
