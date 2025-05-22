@@ -58,7 +58,8 @@
         </a>
     </nav>
 
-    <form action="#" method="POST" class="absolute bottom-2 px-6 w-full pt-4 border-t border-gray-700">
+    <form action="{{ route('logout') }}" method="POST"
+        class="absolute bottom-2 px-6 w-full pt-4 border-t border-gray-700">
         @csrf
         <button type="submit"
             class="text-gray-300 hover:text-gray-200 transition-colors flex items-center gap-2 w-full hover:bg-gray-700 px-3 py-2 rounded-md">

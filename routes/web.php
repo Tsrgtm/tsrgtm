@@ -6,7 +6,12 @@ Route::get('/', function () {
     return view('index');
 })->name('home');
 
-Route::prefix('admin')->group(function () {
+Route::middleware('guest')->group(function () {
+    Route::get('/login', [App\Http\Controllers\LoginController::class, 'index'])->name('login');
+    Route::post('/login', [App\Http\Controllers\LoginController::class, 'login'])->name('login');
+});
+
+Route::middleware(['auth'])->prefix('admin')->group(function () {
 
     Route::get('/', function () {
         return view('admin.index');
@@ -31,5 +36,8 @@ Route::prefix('admin')->group(function () {
     Route::get('/contacts', function () {
         return view('admin.contact');
     })->name('admin.contact');
+
+
+    Route::post('/logout', [App\Http\Controllers\LoginController::class, 'logout'])->name('logout');
 
 });
