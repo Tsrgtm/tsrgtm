@@ -17,25 +17,17 @@ class LoginController extends Controller
     public function login(request $request)
     {
         $request->validate([
+            'email' => 'required|email',
             'password' => 'required',
         ]);
 
-        $user = User::firstOrFail();
+        $credentials = $request->only('email', 'password');
 
-        if (!$user) {
-            $user = User::create([
-                'name' => 'Admin',
-                'email' => 'admin@admin.com',
-                'password' => bcrypt('password'),
-            ]);
-            $user = User::where('email', 'admin@admin.com')->first();
-        }
-
-        if ($request->password !== env('ADMIN_PASSWORD')) {
+        if (Auth::attempt($credentials)) {
+            $user = Auth::user();
+        } else {
             return back()->withErrors(['password' => 'The password is incorrect']);
         }
-
-        auth()->login($user);
 
         return redirect()->route('admin.index');
 
